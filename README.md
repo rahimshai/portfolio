@@ -70,7 +70,6 @@ You can reach me at:
 
 Email: shaikhrahim882@gmail.com
 Location: Kharadi, Pune, India
-rust
-Copy code
+
 
 
