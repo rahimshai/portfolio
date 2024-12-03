@@ -1,0 +1,156 @@
+/* Section Styling */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+  
+  /* Main Content */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+  }
+  
+  /* Text Section */
+  .text-section {
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px;
+  }
+  
+  .hero-title .highlight {
+    display: block;
+    color: #cc73f8;
+  }
+  
+  .hero-description {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn.primary {
+    background-color: #cc73f8;
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: #b85ee4;
+    transform: scale(1.05)
+  }
+  
+  .btn.secondary {
+    border: 2px solid #cc73f8;
+    color: #cc73f8;
+    transform: scale(1.05);
+  }
+  
+  .btn.secondary:hover {
+    background-color: rgba(204, 115, 248, 0.1);
+  }
+  
+  /* Card Container */
+  .card-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-container {
+    width: 350px;
+    height: 400px;
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    position: relative;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .card-front {
+    background: white;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  
+  .card-back {
+    background: #1f2937; /* Dark background for the back */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    padding: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .card-container {
+      transform: scale(0.9);
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+    }
+  }
+  
