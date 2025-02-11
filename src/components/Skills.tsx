@@ -20,7 +20,7 @@ const skillCategories = [
   {
     title: 'Tools & Technologies',
     icon: Settings,
-    skills: ['Git', 'Docker', 'AWS', 'Jest', 'CI/CD']
+    skills: ['Git', 'Docker', 'AWS', 'GitHub', 'CI/CD']
   }
 ];
 
