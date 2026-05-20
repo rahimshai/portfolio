@@ -4,24 +4,24 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    title: 'Frontend Development',
+    title: 'Frontend',
     icon: Layout,
-    skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Redux']
+    skills: ['React.js', 'Tailwind CSS', 'JavaScript', 'TypeScript', 'HTML', 'CSS']
   },
   {
-    title: 'Backend Development',
+    title: 'Backend',
     icon: Database,
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs']
+    skills: ['Node.js', 'Express.js', 'Firebase', 'MongoDB', 'MySQL']
   },
   {
-    title: 'Programming Languages',
-    icon: Code2,
-    skills: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'HTML/CSS']
-  },
-  {
-    title: 'Tools & Technologies',
+    title: 'DevOps',
     icon: Settings,
-    skills: ['Git', 'Docker', 'AWS', 'GitHub', 'CI/CD']
+    skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'GitHub Actions']
+  },
+  {
+    title: 'Tools',
+    icon: Code2,
+    skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma']
   }
 ];
 

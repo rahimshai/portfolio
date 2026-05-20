@@ -32,17 +32,23 @@ export function Header() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-2">
-            <a href="#about" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-4 py-2 rounded-full text-sm font-medium">
+          <div className="hidden md:flex space-x-1 lg:space-x-2">
+            <a href="#about" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
               About
             </a>
-            <a href="#projects" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-4 py-2 rounded-full text-sm font-medium">
+            <a href="#experience" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
+              Experience
+            </a>
+            <a href="#services" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
+              Services
+            </a>
+            <a href="#projects" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
               Projects
             </a>
-            <a href="#skills" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-4 py-2 rounded-full text-sm font-medium">
+            <a href="#skills" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
               Skills
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-4 py-2 rounded-full text-sm font-medium">
+            <a href="#contact" className="text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all duration-300 px-3 lg:px-4 py-2 rounded-full text-xs lg:text-sm font-medium">
               Contact
             </a>
           </div>
@@ -74,9 +80,15 @@ export function Header() {
             className="fixed inset-0 bg-transparent -z-10 md:hidden" 
             onClick={() => setIsMenuOpen(false)} 
           />
-          <div className="relative md:hidden mt-3 px-4 py-4 space-y-3 flex flex-col items-center rounded-2xl glass-card bg-[#0b0f19]/90 border-[#cc73f8]/10 animate-fade-in shadow-2xl">
+          <div className="relative md:hidden mt-3 px-4 py-4 space-y-2 flex flex-col items-center rounded-2xl glass-card bg-[#0b0f19]/90 border-[#cc73f8]/10 animate-fade-in shadow-2xl">
           <a href="#about" onClick={() => setIsMenuOpen(false)} className="w-full text-center text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all py-2 rounded-xl font-medium">
             About
+          </a>
+          <a href="#experience" onClick={() => setIsMenuOpen(false)} className="w-full text-center text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all py-2 rounded-xl font-medium">
+            Experience
+          </a>
+          <a href="#services" onClick={() => setIsMenuOpen(false)} className="w-full text-center text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all py-2 rounded-xl font-medium">
+            Services
           </a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)} className="w-full text-center text-gray-300 hover:text-[#cc73f8] hover:bg-[#cc73f8]/10 transition-all py-2 rounded-xl font-medium">
             Projects

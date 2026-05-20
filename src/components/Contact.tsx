@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Send, Info, RefreshCw } from 'lucide-react';
+import { Mail, Phone, Send, Info, RefreshCw, Github, Linkedin } from 'lucide-react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { motion } from 'framer-motion';
@@ -121,8 +121,8 @@ export function Contact() {
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Contact Information</h3>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6">
-                Feel free to reach out for project proposals, collaboration ideas, or just a developer chat. I'll get back to you as soon as possible.
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 font-medium">
+                Let’s build something amazing together. Reach out for project proposals, collaboration ideas, or business inquiries.
               </p>
             </div>
 
@@ -147,15 +147,25 @@ export function Contact() {
                 </div>
               </a>
 
-              <div className="flex items-center p-4 bg-slate-900/40 border border-white/5 rounded-2xl transition-all duration-300">
-                <div className="p-3 bg-[#cc73f8]/10 border border-[#cc73f8]/20 rounded-xl text-[#cc73f8] mr-4">
-                  <MapPin className="w-5 h-5" />
+              <a href="https://github.com/rahimshai" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-slate-900/40 border border-white/5 hover:border-[#cc73f8]/30 rounded-2xl group transition-all duration-300">
+                <div className="p-3 bg-[#cc73f8]/10 border border-[#cc73f8]/20 group-hover:bg-[#cc73f8] group-hover:text-white rounded-xl text-[#cc73f8] mr-4 transition-all duration-300">
+                  <Github className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">Location</span>
-                  <span className="text-gray-200 font-medium text-sm sm:text-base">Kharadi, Pune, India</span>
+                  <span className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">GitHub</span>
+                  <span className="text-gray-200 group-hover:text-[#cc73f8] transition-colors font-medium text-sm sm:text-base">github.com/rahimshai</span>
                 </div>
-              </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/rahim-shaikh-02b343194/" target="_blank" rel="noopener noreferrer" className="flex items-center p-4 bg-slate-900/40 border border-white/5 hover:border-[#cc73f8]/30 rounded-2xl group transition-all duration-300">
+                <div className="p-3 bg-[#cc73f8]/10 border border-[#cc73f8]/20 group-hover:bg-[#cc73f8] group-hover:text-white rounded-xl text-[#cc73f8] mr-4 transition-all duration-300">
+                  <Linkedin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">LinkedIn</span>
+                  <span className="text-gray-200 group-hover:text-[#cc73f8] transition-colors font-medium text-sm sm:text-base">Let's Connect</span>
+                </div>
+              </a>
             </div>
           </motion.div>
 

@@ -22,15 +22,15 @@ const projects = [
   },
   {
     title: 'Protect Life Sciences Website',
-    description: 'Built and deployed a modern company website for a life sciences business. Implemented responsive frontend architecture using React.js. Connected Firebase services for scalable backend functionality. Configured deployment pipeline and custom domain setup. Improved website accessibility and user experience.',
+    description: 'Built a modern company website with scalable frontend architecture and Firebase backend integration. Implemented responsive layout, configured deployment pipeline, and established secure Firebase integration.',
     image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Firebase', 'Vercel', 'Domain Management'],
+    technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'Vercel'],
     github: '',
     live: 'https://protectlifesciences.in/',
   },
   {
     title: 'Poona Enterprises Website',
-    description: 'Developed a business website with dynamic content management using Sanity CMS. Created reusable React components for scalable frontend development. Integrated CMS-driven workflows for easier client-side content updates. Managed deployment and hosting through Vercel. Designed responsive UI with modern styling practices.',
+    description: 'Created a dynamic business website integrated with Sanity CMS for content management and easy client updates. Features CMS integration, dynamic content routing, and professional business UI.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
     technologies: ['React.js', 'Sanity CMS', 'Tailwind CSS', 'Vercel'],
     github: '',
@@ -38,27 +38,19 @@ const projects = [
   },
   {
     title: 'BingeFlix – Movie Streaming Platform',
-    description: 'Developed a Netflix-inspired movie streaming web application. Implemented user authentication with Email/Password and Google Sign-In using Firebase Authentication. Designed responsive movie browsing UI with modern React architecture. Built protected routes and user session management. Integrated dynamic movie listing and interactive user interface components.',
+    description: 'Netflix-inspired movie streaming platform with authentication and modern UI. Includes Google Authentication, User Login & Signup, protected routes, and a highly responsive streaming platform design.',
     image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'Node.js'],
+    technologies: ['React.js', 'Firebase Authentication', 'Tailwind CSS', 'Node.js'],
     github: 'https://github.com/rahimshai/BingeFlix',
     live: '',
   },
   {
-    title: 'Safa Cyber Point - Digital Services',
-    description: `A comprehensive digital services website bringing essential government and private services to users' fingertips. Modern, responsive, mobile-first design with WhatsApp integration for personal support.`,
-    image: 'https://img.freepik.com/free-vector/digital-services-abstract-concept_335657-3120.jpg?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'WhatsApp API'],
-    github: 'https://github.com/rahimshai/Safa-cafe',
-    live: 'https://safa-cafe.vercel.app/',
-  },
-  {
-    title: 'Kara-Messenger',
-    description: 'A full-featured chatting application built with React and Node.js',
-    image: 'https://static.vecteezy.com/system/resources/previews/006/113/471/non_2x/chat-app-speech-bubble-logo-design-illustration-free-vector.jpg?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React', 'Node.js', 'chat engine', 'Tailwind CSS'],
+    title: 'Kubernetes & Argo CD Deployment',
+    description: 'Automated scalable application deployment using Kubernetes, Docker, AWS EC2, and Argo CD with CI/CD pipelines. Features automated deployment, K8s orchestration, scalable infrastructure, and a complete DevOps workflow.',
+    image: 'https://i.pinimg.com/736x/c9/72/3b/c9723bae931c20d9aa69848f46066e4c.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: ['AWS EC2', 'Docker', 'Kubernetes', 'Argo CD', 'CI/CD'],
     github: 'https://github.com/rahimshai',
-    live: 'https://github.com/rahimshai',
+    live: '',
   }
 ];
 

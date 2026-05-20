@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, HelpCircle, RefreshCw, FileText, Send } from 'lucide-react';
+import { ArrowRight, HelpCircle, RefreshCw, FileText, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
 import logo from './profil.png';
 import Resume from './Resumep.pdf';
 import './Hero.css';
@@ -49,30 +49,29 @@ export function Hero() {
           <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
             Hi, It's <span className="bg-gradient-to-r from-[#cc73f8] via-purple-400 to-pink-500 bg-clip-text text-transparent">Rahim Shaikh</span>
             <span className="block text-2xl sm:text-3xl font-medium text-slate-300 mt-2">
-              Full-Stack Developer & DevOps Enthusiast
+              Full-Stack Developer & DevOps Engineer
             </span>
           </h1>
 
           <p className="hero-description text-gray-300 text-lg sm:text-xl leading-relaxed mb-8 max-w-xl">
-            I craft immersive, high-performance web experiences using cutting-edge technologies. Specializing in highly scalable React applications, robust Node.js architectures, and automated cloud deployments.
+            I build scalable, modern, and production-ready web applications for businesses and startups.
           </p>
 
           {/* Button Group */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 mb-8">
             <a
-              href="#projects"
+              href="#contact"
               className="group bg-gradient-to-r from-[#cc73f8] to-purple-600 text-white px-6 py-3.5 rounded-xl flex items-center justify-center font-semibold hover:shadow-lg hover:shadow-[#cc73f8]/20 transition-all duration-300 transform hover:-translate-y-0.5"
             >
-              View Projects
+              Hire Me
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             
             <a
-              href="#contact"
+              href="#projects"
               className="border border-white/10 bg-white/5 backdrop-blur-sm text-gray-200 px-6 py-3.5 rounded-xl flex items-center justify-center font-semibold hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-0.5"
             >
-              <Send className="mr-2 w-4 h-4 text-[#cc73f8]" />
-              Contact Me
+              View Projects
             </a>
 
             <a
@@ -83,6 +82,22 @@ export function Hero() {
               <FileText className="mr-2 w-4 h-4" />
               Download Resume
             </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex space-x-5 items-center">
+             <a href="https://github.com/rahimshai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+               <Github className="w-6 h-6" />
+             </a>
+             <a href="https://www.linkedin.com/in/rahim-shaikh-02b343194/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+               <Linkedin className="w-6 h-6" />
+             </a>
+             <a href="mailto:shaikhrahim882@gmail.com" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+               <Mail className="w-6 h-6" />
+             </a>
+             <a href="https://wa.me/918623082784" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+               <MessageCircle className="w-6 h-6" />
+             </a>
           </div>
         </motion.div>
 
