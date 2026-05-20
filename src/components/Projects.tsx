@@ -51,6 +51,22 @@ const projects = [
     technologies: ['AWS EC2', 'Docker', 'Kubernetes', 'Argo CD', 'CI/CD'],
     github: 'https://github.com/rahimshai',
     live: '',
+  },
+  {
+    title: 'Safa Cyber Point - Digital Services',
+    description: "A comprehensive digital services website bringing essential government and private services to users' fingertips. Modern, responsive, mobile-first design with WhatsApp integration for personal support.",
+    image: 'https://img.freepik.com/free-vector/digital-services-abstract-concept_335657-3120.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'WhatsApp API'],
+    github: 'https://github.com/rahimshai/Safa-cafe',
+    live: 'https://safa-cafe.vercel.app/',
+  },
+  {
+    title: 'Kara-Messenger',
+    description: 'A full-featured chatting application built with React and Node.js',
+    image: 'https://static.vecteezy.com/system/resources/previews/006/113/471/non_2x/chat-app-speech-bubble-logo-design-illustration-free-vector.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: ['React', 'Node.js', 'chat engine', 'Tailwind CSS'],
+    github: 'https://github.com/rahimshai',
+    live: 'https://github.com/rahimshai',
   }
 ];
 
