@@ -32,7 +32,7 @@ const projects = [
       'Authentication',
       'GoDaddy',
     ],
-    github: '',
+    github: 'https://github.com/rahimshai/pleux',
     live: 'https://www.pleux.in/',
   },
 
@@ -49,7 +49,7 @@ const projects = [
       'SEO Optimization',
       'Responsive Design',
     ],
-    github: '',
+    github: 'https://github.com/rahimshai/protectlifesciences',
     live: 'https://protectlifesciences.in/',
   },
 
@@ -67,7 +67,7 @@ const projects = [
       'Vercel',
       'CMS Integration',
     ],
-    github: '',
+    github: 'https://github.com/rahimshai/Poona-enterprises-',
     live: 'https://poonaenterprises.in',
   },
 
@@ -104,7 +104,7 @@ const projects = [
       'DevOps',
       'Containerization',
     ],
-    github: 'https://github.com/rahimshai',
+    github: 'https://github.com/rahimshai/k8s-kind-voting-app',
     live: '',
   },
 
