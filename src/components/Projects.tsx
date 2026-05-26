@@ -2,83 +2,167 @@ import React, { useState } from 'react';
 import { ExternalLink, Github, Folder, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import protectLifeSciences from "../assets/protectlifesciences.jpeg";
+import Prote from "../assets/Protect LLC Logo (1).png";
+import pleux from "../assets/Pleux.jpeg";
 type Project = {
   title: string;
   description: string;
   image: string;
+  
   technologies: string[];
   github: string;
   live: string;
 };
 
 const projects = [
+ 
   {
     title: 'Pleux Business Ecommerce Website',
-    description: 'Developed and deployed a responsive business website for a client using React.js and Tailwind CSS. Integrated Firebase for backend services and authentication. Configured deployment workflow using Vercel with custom domain integration. Managed DNS mapping and production hosting setup through GoDaddy. Optimized UI responsiveness and website performance for cross-device compatibility.',
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Tailwind CSS', 'Firebase', 'Vercel', 'GoDaddy'],
+    description:
+      'Developed and deployed a modern ecommerce business platform with a scalable React frontend and Firebase-powered backend services. Focused on responsive UI/UX, optimized website performance, secure authentication workflows, and seamless custom domain deployment for production-ready business operations.',
+    image:
+      pleux,
+    technologies: [
+      'React.js',
+      'Tailwind CSS',
+      'Firebase',
+      'Vercel',
+      'Responsive Design',
+      'Authentication',
+      'GoDaddy',
+    ],
     github: '',
     live: 'https://www.pleux.in/',
   },
+
   {
-    title: 'Protect Life Sciences Website',
-    description: 'Built a modern company website with scalable frontend architecture and Firebase backend integration. Implemented responsive layout, configured deployment pipeline, and established secure Firebase integration.',
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'Vercel'],
+    title: 'Protect Life Sciences India',
+    description:
+      'Designed and developed a professional healthcare and pharmaceutical company website focused on responsive performance, modern branding, SEO optimization, and scalable frontend architecture. Integrated production deployment workflows and optimized the platform for cross-device accessibility.',
+    image: protectLifeSciences,
+    technologies: [
+      'React.js',
+      'Tailwind CSS',
+      'Firebase',
+      'Vercel',
+      'SEO Optimization',
+      'Responsive Design',
+    ],
     github: '',
     live: 'https://protectlifesciences.in/',
   },
+
   {
-    title: 'Poona Enterprises Website',
-    description: 'Created a dynamic business website integrated with Sanity CMS for content management and easy client updates. Features CMS integration, dynamic content routing, and professional business UI.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Sanity CMS', 'Tailwind CSS', 'Vercel'],
+    title: 'Poona Enterprises Business Website',
+    description:
+      'Built a dynamic business website with Sanity CMS integration, enabling seamless content management and real-time client-side updates. Developed a clean and professional UI with scalable frontend architecture and optimized content delivery workflows.',
+    image:
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+    technologies: [
+      'React.js',
+      'Sanity CMS',
+      'Tailwind CSS',
+      'Dynamic Routing',
+      'Vercel',
+      'CMS Integration',
+    ],
     github: '',
     live: 'https://poonaenterprises.in',
   },
+
   {
-    title: 'BingeFlix – Movie Streaming Platform',
-    description: 'Netflix-inspired movie streaming platform with authentication and modern UI. Includes Google Authentication, User Login & Signup, protected routes, and a highly responsive streaming platform design.',
-    image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React.js', 'Firebase Authentication', 'Tailwind CSS', 'Node.js'],
+    title: 'BingeFlix – Streaming Platform',
+    description:
+      'Engineered a modern movie streaming platform inspired by Netflix with secure authentication, protected routes, responsive layouts, and optimized frontend performance. Implemented user-focused UI/UX with scalable architecture and seamless Firebase authentication workflows.',
+    image:
+      'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&q=80&w=800',
+    technologies: [
+      'React.js',
+      'Firebase Authentication',
+      'Tailwind CSS',
+      'Node.js',
+      'Responsive UI',
+      'Protected Routes',
+    ],
     github: 'https://github.com/rahimshai/BingeFlix',
     live: '',
   },
+
   {
-    title: 'Kubernetes & Argo CD Deployment',
-    description: 'Automated scalable application deployment using Kubernetes, Docker, AWS EC2, and Argo CD with CI/CD pipelines. Features automated deployment, K8s orchestration, scalable infrastructure, and a complete DevOps workflow.',
-    image: 'https://i.pinimg.com/736x/c9/72/3b/c9723bae931c20d9aa69848f46066e4c.jpg?auto=format&fit=crop&q=80&w=800',
-    technologies: ['AWS EC2', 'Docker', 'Kubernetes', 'Argo CD', 'CI/CD'],
+    title: 'Kubernetes & Argo CD DevOps Deployment',
+    description:
+      'Implemented a scalable DevOps infrastructure using Kubernetes, Docker, AWS EC2, and Argo CD to automate application deployment workflows. Configured CI/CD pipelines, container orchestration, infrastructure scalability, and production-grade deployment automation.',
+    image:
+      'https://i.pinimg.com/736x/c9/72/3b/c9723bae931c20d9aa69848f46066e4c.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: [
+      'AWS EC2',
+      'Docker',
+      'Kubernetes',
+      'Argo CD',
+      'CI/CD',
+      'DevOps',
+      'Containerization',
+    ],
     github: 'https://github.com/rahimshai',
     live: '',
   },
 
   {
-  title: "Protect Life Sciences LLC UAE",
-  description:
-    "Modern pharmaceutical company website developed for a UAE-based healthcare business using React, Vite, and Tailwind CSS.",
-  image: "/images/protect-life-sciences.png",
-  technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-  live: "https://protectlifesciencesllc.ae",
-  github: "https://github.com/protectllcuae-gif/protectlifesciencescuae"
-},
+    title: 'Protect Life Sciences LLC UAE',
+    description:
+      'Designed and developed a premium pharmaceutical and healthcare business website for a UAE-based company with a strong focus on modern UI/UX, responsive performance, SEO optimization, and scalable frontend architecture. Implemented dynamic product showcase sections, WhatsApp integration, fast-loading pages, and production-grade deployment with custom domain configuration.',
+    image: Prote,
+    technologies: [
+      'React.js',
+      'Vite',
+      'Tailwind CSS',
+      'JavaScript',
+      'Responsive Design',
+      'SEO Optimization',
+      'Vercel',
+      'GitHub',
+    ],
+    live: 'https://protectlifesciencesllc.ae',
+    github:
+      'https://github.com/protectllcuae-gif/protectlifesciencescuae',
+  },
 
   {
-    title: 'Safa Cyber Point - Digital Services',
-    description: "A comprehensive digital services website bringing essential government and private services to users' fingertips. Modern, responsive, mobile-first design with WhatsApp integration for personal support.",
-    image: 'https://img.freepik.com/free-vector/digital-services-abstract-concept_335657-3120.jpg?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'WhatsApp API'],
+    title: 'Safa Cyber Point – Digital Services Platform',
+    description:
+      'Created a modern digital services platform delivering government and private online services through a responsive and mobile-first interface. Integrated WhatsApp support workflows and optimized accessibility for seamless user interaction across devices.',
+    image:
+      'https://img.freepik.com/free-vector/digital-services-abstract-concept_335657-3120.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'WhatsApp API',
+      'Responsive Design',
+      'Modern UI/UX',
+    ],
     github: 'https://github.com/rahimshai/Safa-cafe',
     live: 'https://safa-cafe.vercel.app/',
   },
+
   {
-    title: 'Kara-Messenger',
-    description: 'A full-featured chatting application built with React and Node.js',
-    image: 'https://static.vecteezy.com/system/resources/previews/006/113/471/non_2x/chat-app-speech-bubble-logo-design-illustration-free-vector.jpg?auto=format&fit=crop&q=80&w=800',
-    technologies: ['React', 'Node.js', 'chat engine', 'Tailwind CSS'],
+    title: 'Kara Messenger – Real-Time Chat Application',
+    description:
+      'Developed a full-featured real-time messaging platform with modern chat functionality, responsive UI, and scalable frontend architecture. Implemented seamless communication workflows with optimized user experience and clean interface design.',
+    image:
+      'https://static.vecteezy.com/system/resources/previews/006/113/471/non_2x/chat-app-speech-bubble-logo-design-illustration-free-vector.jpg?auto=format&fit=crop&q=80&w=800',
+    technologies: [
+      'React',
+      'Node.js',
+      'Chat Engine',
+      'Tailwind CSS',
+      'Real-Time Messaging',
+      'Responsive UI',
+    ],
     github: 'https://github.com/rahimshai',
     live: 'https://github.com/rahimshai',
-  }
+  },
 ];
 
 const containerVariants = {
