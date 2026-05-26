@@ -52,6 +52,17 @@ const projects = [
     github: 'https://github.com/rahimshai',
     live: '',
   },
+
+  {
+  title: "Protect Life Sciences LLC UAE",
+  description:
+    "Modern pharmaceutical company website developed for a UAE-based healthcare business using React, Vite, and Tailwind CSS.",
+  image: "/images/protect-life-sciences.png",
+  tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+  live: "https://protectlifesciencesllc.ae",
+  github: "https://github.com/protectllcuae-gif/protectlifesciencescuae"
+},
+
   {
     title: 'Safa Cyber Point - Digital Services',
     description: "A comprehensive digital services website bringing essential government and private services to users' fingertips. Modern, responsive, mobile-first design with WhatsApp integration for personal support.",
