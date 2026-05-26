@@ -58,7 +58,7 @@ const projects = [
   description:
     "Modern pharmaceutical company website developed for a UAE-based healthcare business using React, Vite, and Tailwind CSS.",
   image: "/images/protect-life-sciences.png",
-  tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+  technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
   live: "https://protectlifesciencesllc.ae",
   github: "https://github.com/protectllcuae-gif/protectlifesciencescuae"
 },
