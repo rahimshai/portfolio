@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, HelpCircle, RefreshCw, FileText, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
+import { ArrowRight, HelpCircle, RefreshCw, FileText, Github, Linkedin, Mail, MessageCircle, Briefcase, CheckCircle2 } from 'lucide-react';
 import logo from './profil.png';
 import Resume from './Resumep.pdf';
+import ptcLogo from '../assets/ptc-logo.png';
 import './Hero.css';
+
+// PTC Logo component using the official brand image
+const PTCLogo = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <img src={ptcLogo} alt="PTC" className={className} style={{ objectFit: 'contain' }} />
+);
 
 export function Hero() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -35,30 +41,61 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          {/* Accent Badge */}
-          <motion.div 
-            className="inline-flex items-center space-x-2 bg-[#cc73f8]/15 border border-[#cc73f8]/30 px-4 py-1.5 rounded-full text-xs font-semibold text-[#cc73f8] w-fit mb-6 shadow-sm shadow-[#cc73f8]/10"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
-            <span>Available for Opportunities</span>
-          </motion.div>
+          {/* Accent Badges: Sr. Developer @ ITC Infotech & PTC Windchill Logo */}
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <motion.div 
+              className="inline-flex items-center space-x-2 bg-[#cc73f8]/15 border border-[#cc73f8]/30 px-4 py-1.5 rounded-full text-xs font-semibold text-[#cc73f8] shadow-sm shadow-[#cc73f8]/10"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
+              <span>Sr. Developer @ ITC Infotech</span>
+            </motion.div>
 
-          <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
+            <motion.div 
+              className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/30 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-400 shadow-sm"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <PTCLogo className="w-5 h-5" />
+              <span>PTC Windchill PLM</span>
+            </motion.div>
+          </div>
+
+          <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-4">
             Hi, It's <span className="bg-gradient-to-r from-[#cc73f8] via-purple-400 to-pink-500 bg-clip-text text-transparent">Rahim Shaikh</span>
             <span className="block text-2xl sm:text-3xl font-medium text-slate-300 mt-2">
-              Full-Stack Developer & DevOps Engineer
+              Sr. Developer @ ITC Infotech | Full-Stack & PLM
             </span>
           </h1>
 
-          <p className="hero-description text-gray-300 text-lg sm:text-xl leading-relaxed mb-8 max-w-xl">
-            I build scalable, modern, and production-ready web applications for businesses and startups.
+          <p className="hero-description text-gray-300 text-lg leading-relaxed mb-6 max-w-xl">
+            Specializing in enterprise PTC Windchill PLM customization, core development, and Application Management Services (AMS) at <strong>ITC Infotech</strong>. Proven track record of independently shipping scalable, modern production platforms for healthcare and commercial clients.
           </p>
 
+          {/* Completed Live Projects & Experience Metrics Bar */}
+          <div className="grid grid-cols-3 gap-3 py-4 border-y border-white/10 my-4 max-w-lg">
+            <div className="text-left">
+              <span className="text-2xl sm:text-3xl font-extrabold text-white block">6+</span>
+              <span className="text-xs text-gray-400 font-medium">Live Projects Done</span>
+            </div>
+            <div className="text-left border-l border-white/10 pl-4">
+              <span className="text-2xl sm:text-3xl font-extrabold text-[#cc73f8] block">3+</span>
+              <span className="text-xs text-gray-400 font-medium">Years Experience</span>
+            </div>
+            <div className="text-left border-l border-white/10 pl-4">
+              <div className="flex items-center space-x-1">
+                <PTCLogo className="w-5 h-5" />
+                <span className="text-2xl sm:text-3xl font-extrabold text-emerald-400 block">PLM</span>
+              </div>
+              <span className="text-xs text-gray-400 font-medium">Windchill & AMS</span>
+            </div>
+          </div>
+
           {/* Button Group */}
-          <div className="flex flex-wrap gap-4 mb-8">
+          <div className="flex flex-wrap gap-4 my-6">
             <a
               href="#contact"
               className="group bg-gradient-to-r from-[#cc73f8] to-purple-600 text-white px-6 py-3.5 rounded-xl flex items-center justify-center font-semibold hover:shadow-lg hover:shadow-[#cc73f8]/20 transition-all duration-300 transform hover:-translate-y-0.5"
@@ -86,16 +123,16 @@ export function Hero() {
 
           {/* Social Links */}
           <div className="flex space-x-5 items-center">
-             <a href="https://github.com/rahimshai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+             <a href="https://github.com/rahimshai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300" aria-label="GitHub">
                <Github className="w-6 h-6" />
              </a>
-             <a href="https://www.linkedin.com/in/rahim-shaikh-02b343194/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+             <a href="https://www.linkedin.com/in/rahim-shaikh-02b343194/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300" aria-label="LinkedIn">
                <Linkedin className="w-6 h-6" />
              </a>
-             <a href="mailto:shaikhrahim882@gmail.com" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+             <a href="mailto:shaikhrahim882@gmail.com" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300" aria-label="Email">
                <Mail className="w-6 h-6" />
              </a>
-             <a href="https://wa.me/918623082784" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300">
+             <a href="https://wa.me/918623082784" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#cc73f8] hover:scale-110 transition-all duration-300" aria-label="WhatsApp">
                <MessageCircle className="w-6 h-6" />
              </a>
           </div>
@@ -119,27 +156,37 @@ export function Hero() {
                   className="card-image w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
                 />
                 
-                {/* Visual Glass Indicator Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                {/* Visual Glass Indicator Overlay with PTC Windchill and ITC Infotech */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex flex-col justify-end p-6">
+                  <div className="flex items-center space-x-1.5 mb-1">
+                    <PTCLogo className="w-5 h-5" />
+                    <span className="text-xs font-semibold text-emerald-400">PTC Windchill PLM</span>
+                  </div>
                   <span className="text-white text-2xl font-bold">Rahim Shaikh</span>
-                  <span className="text-[#cc73f8] text-sm font-semibold">Double Click or Tap Flip to read Bio</span>
+                  <span className="text-[#cc73f8] text-sm font-semibold">Sr. Developer @ ITC Infotech</span>
                 </div>
               </div>
 
               {/* Back Side */}
               <div className="card-back overflow-hidden border border-[#cc73f8]/30 rounded-2xl shadow-2xl bg-[#0d0a1b]/95 p-6 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-bold text-white border-b border-white/10 pb-3 mb-4 flex items-center">
-                    <HelpCircle className="w-5 h-5 text-[#cc73f8] mr-2" /> About Me
+                  <h3 className="text-lg font-bold text-white border-b border-white/10 pb-3 mb-4 flex items-center justify-between">
+                    <span className="flex items-center">
+                      <HelpCircle className="w-5 h-5 text-[#cc73f8] mr-2" /> About Me
+                    </span>
+                    <span className="text-xs font-semibold text-emerald-400 flex items-center">
+                      <PTCLogo className="w-4 h-4 mr-1" />
+                      Windchill
+                    </span>
                   </h3>
                   <p className="card-description text-gray-300 text-sm leading-relaxed">
-                    Results-driven Computer Applications graduate with strong skills in software development and web technologies.
+                    Senior Software Developer at <strong>ITC Infotech</strong> specializing in enterprise PTC Windchill PLM customization, core business logic workflows, and AMS lifecycle management.
                   </p>
                   <p className="card-description text-gray-300 text-sm leading-relaxed mt-3">
-                    Proficient in languages like Java, Python, JavaScript, C#, and C++, and experienced with frameworks like React.js, Angular, and Node.js. Familiar with Agile, CI/CD, and Docker to optimize system performance.
+                    Proficient in languages like Java, Python, JavaScript, and experienced with frameworks like React.js, Node.js, and cloud orchestration with Docker and Kubernetes to ensure high availability and performance.
                   </p>
                   <p className="card-description text-gray-300 text-sm leading-relaxed mt-3">
-                    Passionate about problem-solving and delivering innovative solutions. Seeking to contribute to a dynamic organization and grow as a technical professional.
+                    Shipped <strong>6+ production-ready commercial platforms</strong> for healthcare and digital commerce businesses with seamless CI/CD delivery.
                   </p>
                 </div>
                 
@@ -165,3 +212,4 @@ export function Hero() {
     </section>
   );
 }
+
