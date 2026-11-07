@@ -19,9 +19,9 @@ const skillCategories = [
     skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'GitHub Actions']
   },
   {
-    title: 'Tools',
+    title: 'Tools & Enterprise',
     icon: Code2,
-    skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma']
+    skills: ['PTC Windchill', 'PLM', 'Git', 'GitHub', 'VS Code', 'Postman', 'Figma']
   }
 ];
 

@@ -4,6 +4,18 @@ import { Briefcase, CheckCircle2 } from 'lucide-react';
 
 const experiences = [
   {
+    role: 'Sr. Developer',
+    company: 'ITC Infotech Pvt. Ltd.',
+    period: '2026 - Present',
+    description: 'Working on PTC Windchill technology and PLM enterprise solutions, focusing on customization, development, and Application Management Services (AMS).',
+    achievements: [
+      'Customizing and developing enterprise PTC Windchill PLM solutions, workflows, and business logic.',
+      'Delivering Application Management Services (AMS) with proactive issue resolution, incident management, and support.',
+      'Engineering server-side and client-side customizations tailored to client business requirements.',
+      'Ensuring high system availability, performance tuning, and seamless maintenance for enterprise PLM environments.'
+    ]
+  },
+  {
     role: 'Freelance Full-Stack Developer',
     company: 'Self-Employed',
     period: 'Jul 2024 - 2026',
